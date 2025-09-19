@@ -3,38 +3,70 @@
 <head>
   <title>Dataset - AgriData Explorer</title>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>document.addEventListener("DOMContentLoaded",()=>{AOS.init({duration:1000,once:true});});</script>
+  <script>
+    document.addEventListener("DOMContentLoaded",()=>{
+      AOS.init({duration:1200, once:true, easing:"ease-in-out"});
+    });
+  </script>
 </head>
-<body>
-<header>
-  <nav class="navbar"><div class="logo">🌾 AgriData Explorer</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
-      <li><a href="features.html">Features</a></li><li><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="insights.html">Insights</a></li><li><a href="dataset.html" class="active">Dataset</a></li><li><a href="contact.html">Contact</a></li>
+<body style="margin:0; font-family:Arial, sans-serif; background:#f8f9fa; color:#333;">
+
+<!-- Header -->
+<header style="background:#2e7d32; padding:15px 30px; position:sticky; top:0; z-index:1000;">
+  <nav style="display:flex; justify-content:space-between; align-items:center;">
+    <div style="font-size:1.4rem; font-weight:bold; color:#fff;">🌾 AgriData Explorer</div>
+    <ul style="list-style:none; display:flex; gap:20px; margin:0; padding:0;">
+      <li><a href="index.html" style="color:#fff; text-decoration:none;">Home</a></li>
+      <li><a href="about.html" style="color:#fff; text-decoration:none;">About</a></li>
+      <li><a href="features.html" style="color:#fff; text-decoration:none;">Features</a></li>
+      <li><a href="dashboard.html" style="color:#fff; text-decoration:none;">Dashboard</a></li>
+      <li><a href="insights.html" style="color:#fff; text-decoration:none;">Insights</a></li>
+      <li><a href="dataset.html" style="color:#ffd54f; font-weight:bold; text-decoration:none;">Dataset</a></li>
+      <li><a href="contact.html" style="color:#fff; text-decoration:none;">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="page">
-  <h1 data-aos="fade-up">Dataset</h1>
-  <p data-aos="fade-right">Source: <b>ICRISAT – District Level Data</b></p>
-  <img src="https://images.pexels.com/photos/221357/pexels-photo-221357.jpeg" alt="Crop dataset" class="section-img" data-aos="zoom-in">
+<!-- Dataset Section -->
+<section style="padding:50px 20px; max-width:1100px; margin:auto; text-align:center;">
+  <h1 data-aos="fade-up" style="font-size:2.5rem; color:#2e7d32; margin-bottom:20px;">Dataset</h1>
+  <p data-aos="fade-right" style="font-size:1.1rem; margin-bottom:30px;">
+    Source: <b>ICRISAT – District Level Data</b>
+  </p>
 
-  <h2 data-aos="fade-left">Key Fields</h2>
-  <ul>
-    <li>District, State, Year</li>
-    <li>Crop Area, Production, Yield</li>
-    <li>Rice, Wheat, Oilseeds, Sugarcane, Cotton, Maize</li>
-  </ul>
+  <!-- Hero Image -->
+  <img src="https://images.pexels.com/photos/3183146/pexels-photo-3183146.jpeg" 
+       alt="Crop dataset" 
+       style="width:100%; max-width:900px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.2); aspect-ratio:16/9; object-fit:cover; margin-bottom:40px;" 
+       data-aos="zoom-in">
 
-  <h2 data-aos="fade-up">Access Dataset</h2>
-  <a href="https://docs.google.com/spreadsheets/d/1PHf2rFB53qUu7j8-r4qcHQdrhvxOyiyhyMWIY-nb_m8/edit" class="btn" target="_blank">View Dataset</a>
+  <!-- Key Fields Card -->
+  <div style="background:#fff; border-radius:12px; padding:25px; margin-bottom:30px; text-align:left; box-shadow:0 4px 20px rgba(0,0,0,0.1);" data-aos="fade-left">
+    <h2 style="color:#2e7d32; margin-bottom:15px;">Key Fields</h2>
+    <ul style="list-style:disc; padding-left:20px; line-height:1.8; color:#444;">
+      <li>District, State, Year</li>
+      <li>Crop Area, Production, Yield</li>
+      <li>Rice, Wheat, Oilseeds, Sugarcane, Cotton, Maize</li>
+    </ul>
+  </div>
+
+  <!-- Access Dataset Card -->
+  <div style="background:#fff; border-radius:12px; padding:25px; text-align:center; box-shadow:0 4px 20px rgba(0,0,0,0.1);" data-aos="fade-up">
+    <h2 style="color:#2e7d32; margin-bottom:20px;">Access Dataset</h2>
+    <a href="https://docs.google.com/spreadsheets/d/1PHf2rFB53qUu7j8-r4qcHQdrhvxOyiyhyMWIY-nb_m8/edit" 
+       target="_blank"
+       style="display:inline-block; background:#2e7d32; color:#fff; padding:12px 25px; text-decoration:none; border-radius:8px; font-weight:bold; transition:background 0.3s;">
+       📊 View Dataset
+    </a>
+  </div>
 </section>
 
-<footer><p>© 2025 AgriData Explorer</p></footer>
+<!-- Footer -->
+<footer style="background:#2e7d32; color:#fff; text-align:center; padding:15px; margin-top:40px;">
+  <p>© 2025 AgriData Explorer</p>
+</footer>
+
 </body>
 </html>
