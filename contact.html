@@ -2,38 +2,45 @@
 <html lang="en">
 <head>
   <title>Contact - AgriData Explorer</title>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>document.addEventListener("DOMContentLoaded",()=>{AOS.init({duration:1000,once:true});});</script>
 </head>
 <body>
 <header>
   <nav class="navbar"><div class="logo">🌾 AgriData Explorer</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
-      <li><a href="features.html">Features</a></li><li><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="insights.html">Insights</a></li><li><a href="dataset.html">Dataset</a></li><li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="dataset.html">Dataset</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <section class="page">
-  <h1 data-aos="fade-down">Contact Us</h1>
-  <p data-aos="fade-up">We’d love to hear from you! Reach out for feedback, collaboration, or queries.</p>
-  <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg" alt="Contact team" class="section-img" data-aos="zoom-in">
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you! Reach out for feedback, collaboration, or queries.</p>
 
-  <h2 data-aos="fade-right">Team</h2>
-  <p>Created by: <b>Gomathi A</b></p>
-  <p>Email: <a href="mailto:gomathi@guvi.in">gomathi@guvi.in</a></p>
+  <div class="contact-container">
+    <div class="contact-info">
+      <img src="https://images.pexels.com/photos/461957/pexels-photo-461957.jpeg" alt="Bright agriculture" class="section-img">
+      <p><b>Created by:</b> Gomathi A</p>
+      <p>Email: <a href="mailto:gomathi@guvi.in">gomathi@guvi.in</a></p>
+    </div>
 
-  <form data-aos="fade-up">
-    <input type="text" placeholder="Your Name" required><br><br>
-    <input type="email" placeholder="Your Email" required><br><br>
-    <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
-    <button type="submit" class="btn">Send Message</button>
-  </form>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
 </section>
 
 <footer><p>© 2025 AgriData Explorer</p></footer>
